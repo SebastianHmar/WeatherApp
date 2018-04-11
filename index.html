@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weather App</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://gitcdn.link/cdn/darkskyapp/skycons/master/skycons.js"></script>
+</head>
+<body>
+	<span id="time"></span>
+	<div class="container">
+		<h1>Weather App</h1>
+		<p>Find Weather of Any City(eg. Tokyo)</p>
+		<div class="section">
+			<input type="text" placeholder="Or San Jose, US" id="input">
+			<p id="locationDisplay">
+				<span id="city"></span><span id="country"></span>
+			</p>
+		</div>		
+		<div class="section">
+				<span id="temperature"></span>
+				<span id="temperatureUnit"></span>
+		</div>
+		<div class="section">
+			<span id="humidity"></span>
+		</div>
+		<div class="section">
+			<div id="weatherAnimation">
+				<canvas id="animated-icon" width="128" height="128"></canvas>
+			</div>
+			<span id="weatherDescription"></span>
+		</div>
+		
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

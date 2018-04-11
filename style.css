@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background: #40E0D0;
+  background: linear-gradient(270deg, #0beab1, #e11a81, #d5d924);
+	background-size: 600% 600%;
+	animation: AnimationName 15s ease infinite;
+	color: #fff;
+	-webkit-user-select: none; /* Safari 3.1+ */
+	-moz-user-select: none; /* Firefox 2+ */
+	-ms-user-select: none; /* IE 10+ */
+	user-select: none; /* Standard syntax */
+}
+
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+#time {
+	font-size: 30px;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+
+.container {
+	max-width: 600px;
+	margin: auto;
+	text-align: center;
+	padding: 15px;
+	margin-top: 60px;
+}
+
+h1 {
+	font-weight: 100;
+	letter-spacing: 5px;
+	font-size: 3em;
+	margin-bottom: 10px;
+}
+
+.section {
+	width: 80%;
+	margin: 20px auto;
+}
+
+input {
+	text-align: center;
+	width: 70%;
+	padding: 10px;
+	border: none;
+	color: #aaa;
+}
+
+input:focus {
+	box-shadow: 0px 0px 5px #0beae2;
+	outline: none;
+	color: #0beae2;
+}
+
+#temperatureUnit {
+	cursor: pointer;
+}
+
+#temperature, #temperatureUnit {
+	font-size: 80px;
+}
+
+#city, #country {
+	font-size: 26px;
+}
+
+sup {
+	font-size: 15px;
+	position: relative;
+	top: -20px;
+}
+
+::placeholder {
+    color: #ccc;
+    opacity: 1; /* Firefox */
+}
+
+canvas {
+	transition: all 1s ease;
+}
+
+canvas:hover {
+	transform: scale(1.1);
+}
